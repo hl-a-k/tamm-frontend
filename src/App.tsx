@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import addMouseOver from "./components/hoc/addMouseOver";
 
 function App() {
   return (
@@ -23,4 +24,5 @@ function App() {
   );
 }
 
-export default App;
+// HOC just enhance, not alter need
+export default addMouseOver(App);
